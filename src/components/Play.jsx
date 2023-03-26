@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const Play = () => {
   const [gameCompleted, setGameCompleted] = useState(false);
   const  [score , setScore] = useState(0);
-  let [counter, setCounter] = useState(10);
+  let [counter, setCounter] = useState(60);
 
   const startCounter = () => {
     setCounter(--counter);
