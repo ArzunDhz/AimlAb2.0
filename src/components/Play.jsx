@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Reload from '../assets/pic/reload.png'
-import audioo from '../assets/audio/moan.mp3'
+import audioo from '../assets/audio/sword.wav'
 import {BrowserView, MobileView} from 'react-device-detect';
 import PCballs from "./PCballs";
 import MoblieBalls from "./MoblieBalls";
-
+import { Link } from "react-router-dom";
 
 const Play = () => {
   const [gameCompleted, setGameCompleted] = useState(false);
   const  [score , setScore] = useState(0);
-  let [counter, setCounter] = useState(60);
+  let [counter, setCounter] = useState(10);
 
   const startCounter = () => {
     setCounter(--counter);
@@ -41,8 +41,8 @@ audio.play();
 {gameCompleted ? (
         <div className=" text-white text-[50px] text-center  flex justify-center  flex-col mt-[100px]  ">
        <p className=""> Your score is : { score} </p>
-
-     <img onClick={()=>{  window.location.reload() }} src={Reload} className=' h-[200px] w-[200px] ml-[550px] mt-[50px] reload ' alt="" />
+<Link to ='/'> <img  src={Reload} className=' h-[200px] w-[200px] ml-[550px] mt-[50px] reload ' alt="" /></Link>
+  
    
  
 
@@ -68,8 +68,8 @@ audio.play();
      {gameCompleted ? (
         <div className=" text-white text-[50px] text-center  flex justify-center  flex-col mt-[100px]  ">
        <p className=" text-black"> Your score is : { score} </p>
+       <Link to ='/'>  <img  src={Reload} className=' h-[70px] w-[70px] ml-[170px] mt-[50px] reload ' alt="" /></Link>
 
-     <img onClick={()=>{  window.location.reload() }} src={Reload} className=' h-[70px] w-[70px] ml-[170px] mt-[50px] reload ' alt="" />
         </div>
       ) : (
 <div className="">
