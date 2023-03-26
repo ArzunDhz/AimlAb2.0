@@ -74,7 +74,7 @@ audio.play();
       ) : (
 <div className="">
   <div className="flex flex-col">
-  <h1 className=" text-black text-[50px] mr-5 select-none"> {score} <span className=" text-black text-left text-[50px] justify-end select-none ml-[150px]">{counter} </span></h1>
+  <h1 className=" text-black text-[50px] mr-5 select-none"> {score} <span className=" text-black text-left text-[50px] justify-end select-none ml-[100px]">{counter} </span></h1>
   </div>
 
       <div onClick={updateScore}> <MoblieBalls /></div>
