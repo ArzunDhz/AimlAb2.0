@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Reload from '../assets/pic/reload.png'
-import audioo from '../assets/audio/moan.mp3'
+import audioo from '../assets/audio/sword.wav'
 import {BrowserView, MobileView} from 'react-device-detect';
 import PCballs from "./PCballs";
 import MoblieBalls from "./MoblieBalls";
